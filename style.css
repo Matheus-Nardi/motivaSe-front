@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria:#F9DC5C;
+    --cor-secundaria:#FDF8E1;
+    --cor-terciaria:#F5C639;
+    --fonte-primaria:"Gupter", serif;
+    --font-secundaria:"Ubuntu", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--cor-primaria);
+}
+
+header{
+    margin: 1rem;
+}
+
+h1{
+    font-family: var(--font-secundaria);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    width: 80%; 
+    max-width: 800px; 
+    padding: 2rem;
+}
+
+
+#texto-frase{
+    font-family: var(--fonte-primaria);
+    padding: 2rem;
+    line-height: 1.rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#autor-frase{
+    font-family: var(--font-secundaria);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer{
+    background-color: var(--cor-terciaria);
+}
+
+footer p {
+    font-family: var(--font-secundaria);
+    padding: 1.5rem;
+    text-align: center;
+}
