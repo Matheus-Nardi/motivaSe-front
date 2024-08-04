@@ -2,7 +2,7 @@ const url = "http://localhost:8080/motiva-se/frases";
 
 async function consumirApi() {
   try {
-    const response = await fetch(`${url}/${2}`);
+    const response = await fetch(url);
     if (!response.ok) {
       throw new Error("Erro na rede ao buscar as frases");
     }
